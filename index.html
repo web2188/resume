@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+	<style>
+		div{
+			width:200px;
+			height:200px;
+			background:#00f;
+			/*指定过度属性*/
+			transition-property:background; /*所有属性都可以过度*/
+			/*设置过度持续的时间*/
+			transition-duration:3s;
+			 /*过度延迟*/
+			 transition-delay:10s;
+			 /*过度属性的编写位置：将过度代码放在元素声明的样式中，有去又回，
+				如果将代码放在触发属性（hover） 只管去不管回
+			 */
+		}
+		div:hover{
+			background:#ff0;
+			border-radius:50%; /*圆角*/
+
+		}
+	</style>
+ </head>
+ <body>
+		<div></div>
+ </body>
+</html>
